@@ -11,6 +11,8 @@ guessField.focus();
 let guessCount = 1;
 let resetButton;
 
+    // [To Do: If user enters number greater than 100,
+    // Disable submit button and prompt that number is out of range]
 function checkGuess() {
     let userGuess = Number(guessField.value);
     if (guessCount === 1) {
