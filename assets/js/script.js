@@ -6,8 +6,8 @@ const lowOrHi = document.querySelector('.lowOrHi');
 
 const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
-const resetGameContainer = document.querySelector('.container');
 
+guessField.focus();
 let guessCount = 1;
 let resetButton;
 
