@@ -6,11 +6,36 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game</title>
-    <script src="assets/js/script.js defer"></script>
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<!--[To Do: Add comments to this block]-->
+<div class="container">
+    <div class="row"><!-- Start Row-->
+        <div class="col-md-12 text-center titleContainer">
+            <h1 class="gameTitle my-5 ">Number guessing game</h1>
+            <p class="mb-3">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
+                We'll tell you if your guess was too high or too low.</p>
+        </div>
+        <div class="col-md-12 border text-center m-auto">
+            <div class="form-inline align-center p-5 form-container">
+                <label for="guessField">Guess a Number</label>
+                <input type="text" class="form-control guessField mx-3" id="guessField">
+                <button type="submit" class="btn btn-primary guessSubmit">Submit Guess</button>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="resultParas mt-4">
+                <p class="guesses"></p>
+                <p class="lastResult p-2 rounded"></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+    </div><!-- End Row-->
+</div>
 
 <!--Bootsrtap Essentials-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"

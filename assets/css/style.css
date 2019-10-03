@@ -1,0 +1,16 @@
+body {
+    background-color: #F8F8FF !important;
+    font-family: 'Stylish', sans-serif !important;
+}
+.titleContainer p {
+    width: 100%;
+    max-width: 56%;
+    margin: auto;
+}
+.container {
+    max-width: 800px !important;
+}
+.form-container {
+    width: fit-content;
+    margin: auto;
+}
