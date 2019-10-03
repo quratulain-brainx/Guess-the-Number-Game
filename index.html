@@ -12,31 +12,34 @@
     <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--[To Do: Add comments to this block]-->
-<div class="container">
-    <div class="row"><!-- Start Row-->
-        <div class="col-md-12 text-center titleContainer">
-            <h1 class="gameTitle my-5 ">Number guessing game</h1>
-            <p class="mb-3">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
-                We'll tell you if your guess was too high or too low.</p>
-        </div>
-        <div class="col-md-12 border text-center m-auto">
-            <div class="form-inline align-center p-5 form-container">
-                <label for="guessField" class="mx-3 mb-2">Guess a Number</label>
-                <input type="text" class="form-control guessField mb-2" id="guessField">
-                <button type="submit" class="btn btn-primary guessSubmit mx-3 mb-2">Submit Guess</button>
+<main>
+    <div class="container">
+        <div class="row"><!-- Start Row-->
+            <div class="col-md-12 text-center titleContainer">
+                <h1 class="gameTitle my-5 ">Number guessing game</h1>
+                <p class="mb-3">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
+                    We'll tell you if your guess was too high or too low.</p>
             </div>
-        </div>
-        <div class="col-md-12">
-            <div class="resultParas mt-4">
-                <p class="guesses"></p>
-                <p class="lastResult p-2 rounded"></p>
-                <p class="lowOrHi"></p>
+            <div class="col-md-12 border text-center m-auto">
+                <div class="form-inline align-center p-5 form-container">
+                    <label for="guessField" class="mx-3 mb-2">Guess a Number</label>
+                    <input type="text" class="form-control guessField mb-2" id="guessField">
+                    <button type="submit" class="btn btn-primary guessSubmit mx-3 mb-2">Submit Guess</button>
+                </div>
             </div>
-        </div>
-    </div><!-- End Row-->
-</div>
-
+            <div class="col-md-12">
+                <div class="resultParas mt-4">
+                    <p class="guesses"></p>
+                    <p class="lastResult p-2 rounded"></p>
+                    <p class="lowOrHi"></p>
+                </div>
+            </div>
+        </div><!-- End Row-->
+    </div>
+</main>
+<footer class="text-center">
+    <p class="footer-content">Copyright &copy; 2019 Qurat</p>
+</footer>
 <!--Bootsrtap Essentials-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
